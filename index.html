@@ -12,6 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="ネネのポートフォリオ。フルスタックエンジニアとしての実績とスキル。" />
     <title>ネネ — ポートフォリオ</title>
+    <script src="/auth.js"></script>
+    <script>
+      if (!window.PortfolioAuth || !window.PortfolioAuth.isAuthenticated()) {
+        window.location.replace("/login.html");
+      }
+    </script>
     <script type="module" crossorigin src="/assets/index-CejS1i5n.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DqCKIw-B.css">
   </head>
